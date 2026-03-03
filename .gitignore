@@ -1,0 +1,30 @@
+# Build artifacts
+/target
+debug/
+*.pdb
+
+# Cargo
+Cargo.lock is included for binaries
+# Cargo.lock  # keep it checked in — this is a binary project
+
+# Environment
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ONNX model cache
+cache/
+models/*.onnx
+
+# Flickr tokens (secrets)
+.flickr_tokens

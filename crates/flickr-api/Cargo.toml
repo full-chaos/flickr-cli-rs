@@ -1,0 +1,29 @@
+[package]
+name = "flickr-api"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+reqwest = { workspace = true }
+keyring = { version = "3", features = ["apple-native"] }
+open = "5"
+dirs = "6"
+hmac = "0.12"
+sha1 = "0.10"
+base64 = "0.22"
+percent-encoding = "2.3"
+rand = "0.9"
+
+[lints]
+workspace = true
+
+[dev-dependencies]
+wiremock = "0.6"
+tempfile = { workspace = true }
+tokio = { workspace = true }
