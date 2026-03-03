@@ -50,6 +50,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@1.75
       - uses: Swatinem/rust-cache@v2
+      - name: Remove lock file incompatible with old Cargo
+        run: rm Cargo.lock
       - run: cargo check --workspace
 
   features:
